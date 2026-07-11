@@ -1,26 +1,15 @@
 [
   {
-    "image": "./assets/projects/project_sample1/image.jpg",
-    "title": "DTR Management System",
-    "description": "A complete Daily Time Record system with fingerprint integration, attendance compliance analytics, and automated reporting for organizational use.",
-    "tools": ["Laravel", "Livewire", "MySQL", "PHP"],
-    "downloadLink": "#",
-    "liveDemoLink": null
-  },
-  {
-    "image": "./assets/projects/project_sample2/image.jpg",
+    "image": "./assets/projects/images/portfolio.png",
     "title": "Personal Portfolio Website",
     "description": "A modern, responsive portfolio built with vanilla HTML, CSS, and JavaScript featuring particle animations, glassmorphism design, and smooth interactions.",
-    "tools": ["HTML", "CSS", "JavaScript"],
-    "downloadLink": "#",
-    "liveDemoLink": "#"
-  },
-  {
-    "image": "./assets/projects/project_sample3/image.jpg",
-    "title": "More Projects Coming Soon",
-    "description": "I'm constantly building new things. Check back soon or visit my GitHub for the latest updates on my work and open-source contributions.",
-    "tools": ["React", "Svelte", "Node.js", "Python"],
+    "tools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "FontAwesome"
+    ],
     "downloadLink": null,
-    "liveDemoLink": "https://github.com/arielnoja2002"
+    "liveDemoLink": null
   }
 ]

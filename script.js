@@ -265,8 +265,8 @@ async function loadProjects() {
     projects.forEach((project, index) => {
       // Delay classes: 1, 2, 3, etc. Max out at 4 for styling simplicity if needed
       const delayClass = `reveal-delay-${(index % 4) + 1}`;
-      
-      const techStackHTML = project.tools.map(tool => 
+
+      const techStackHTML = project.tools.map(tool =>
         `<span class="project-tech">${tool}</span>`
       ).join('');
 
@@ -275,11 +275,11 @@ async function loadProjects() {
         linksHTML += `
           <a href="${project.downloadLink}" class="project-link github" target="_blank" rel="noopener noreferrer">
             <i class="fa-solid fa-download"></i>
-            Download/Source
+            Download Demo
           </a>
         `;
       }
-      
+
       if (project.liveDemoLink) {
         linksHTML += `
           <a href="${project.liveDemoLink}" class="project-link live" target="_blank" rel="noopener noreferrer">
@@ -305,7 +305,7 @@ async function loadProjects() {
           </div>
         </div>
       `;
-      
+
       container.innerHTML += projectHTML;
     });
 
