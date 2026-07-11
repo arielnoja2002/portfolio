@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ariel M. Noja — Full-Stack Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Ariel M. Noja — Full-Stack Developer specializing in Laravel, React, Svelte, and modern web technologies. Open to freelance and full-time opportunities." />
-  <meta name="keywords" content="Ariel Noja, Full-Stack Developer, Web Developer, Laravel, React, Svelte, PHP, JavaScript, Portfolio" />
+  <meta name="description"
+    content="Portfolio of Ariel M. Noja — Full-Stack Developer specializing in Laravel, React, Svelte, and modern web technologies. Open to freelance and full-time opportunities." />
+  <meta name="keywords"
+    content="Ariel Noja, Full-Stack Developer, Web Developer, Laravel, React, Svelte, PHP, JavaScript, Portfolio" />
   <meta name="author" content="Ariel M. Noja" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Ariel M. Noja — Full-Stack Developer" />
-  <meta property="og:description" content="Full-Stack Developer specializing in Laravel, React, Svelte, and modern web technologies." />
+  <meta property="og:description"
+    content="Full-Stack Developer specializing in Laravel, React, Svelte, and modern web technologies." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://arielnoja.github.io" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
   <!-- Styles -->
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- Particle Background -->
@@ -62,17 +70,17 @@
             <span id="typed-text"></span><span class="typed-cursor">|</span>
           </div>
           <p class="hero-description">
-            A passionate full-stack developer from the Philippines, building modern, 
-            performant, and beautiful web applications. Specializing in Laravel, React, 
+            A passionate full-stack developer from the Philippines, building modern,
+            performant, and beautiful web applications. Specializing in Laravel, React,
             and scalable backend systems.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              <i class="fa-solid fa-laptop-code"></i>
               View My Work
             </a>
             <a href="#contact" class="btn btn-outline" id="hero-cta-contact">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <i class="fa-solid fa-envelope"></i>
               Get In Touch
             </a>
           </div>
@@ -95,26 +103,26 @@
           <div class="hero-avatar-wrapper">
             <div class="hero-avatar-ring"></div>
             <div class="hero-avatar-inner">
-              <span class="avatar-initials">AN</span>
+              <img src="./assets/me/herome.png" alt="Ariel M. Noja" class="hero-image" />
             </div>
             <div class="floating-icons">
               <div class="floating-icon" title="Laravel">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l4-4 4 4 8-8"/><path d="M19 5v4h-4"/></svg>
+                <i class="fa-brands fa-laravel" style="color: #ef4444;"></i>
               </div>
               <div class="floating-icon" title="React">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#61dafb" stroke-width="2"><circle cx="12" cy="12" r="2.5"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+                <i class="fa-brands fa-react" style="color: #61dafb;"></i>
               </div>
               <div class="floating-icon" title="JavaScript">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8"/><path d="M8 16c0-2 1.5-3 3-3"/></svg>
+                <i class="fa-brands fa-js" style="color: #eab308;"></i>
               </div>
               <div class="floating-icon" title="Python">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                <i class="fa-brands fa-python" style="color: #f97316;"></i>
               </div>
               <div class="floating-icon" title="PHP">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 12h-5l2-7"/><path d="M7 12h5l-2 7"/></svg>
+                <i class="fa-brands fa-php" style="color: #dc2626;"></i>
               </div>
               <div class="floating-icon" title="Database">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                <i class="fa-solid fa-database" style="color: #22c55e;"></i>
               </div>
             </div>
           </div>
@@ -136,18 +144,20 @@
 
       <div class="about-grid">
         <div class="about-image-card reveal reveal-delay-1">
-          <div class="about-image-placeholder">
-            <span class="initials-large">AN</span>
-            <span class="image-label">Ariel M. Noja</span>
+          <div class="about-image">
+            <img src="./assets/me/aboutme.jpg" alt="Ariel M. Noja" class="about-img-element" />
           </div>
           <div class="about-code-block">
             <span class="code-comment">// about-me.js</span><br />
             <span class="code-keyword">const</span> <span class="code-property">developer</span> = {<br />
             &nbsp;&nbsp;<span class="code-property">name</span>: <span class="code-string">"Ariel M. Noja"</span>,<br />
             &nbsp;&nbsp;<span class="code-property">age</span>: <span class="code-string">23</span>,<br />
-            &nbsp;&nbsp;<span class="code-property">location</span>: <span class="code-string">"Surigao Del Sur, PH"</span>,<br />
-            &nbsp;&nbsp;<span class="code-property">focus</span>: <span class="code-string">"Full-Stack Development"</span>,<br />
-            &nbsp;&nbsp;<span class="code-property">passion</span>: <span class="code-string">"Building impactful apps"</span>,<br />
+            &nbsp;&nbsp;<span class="code-property">location</span>: <span class="code-string">"Surigao Del Sur,
+              PH"</span>,<br />
+            &nbsp;&nbsp;<span class="code-property">focus</span>: <span class="code-string">"Full-Stack
+              Development"</span>,<br />
+            &nbsp;&nbsp;<span class="code-property">passion</span>: <span class="code-string">"Building impactful
+              apps"</span>,<br />
             };
           </div>
         </div>
@@ -155,14 +165,14 @@
         <div class="about-details reveal reveal-delay-2">
           <h3>A Developer Who Cares About Craft</h3>
           <p>
-            I'm a 23-year-old full-stack web developer based in Tagbina, Surigao Del Sur, Philippines. 
-            I recently graduated from <strong>North Eastern Mindanao State University</strong> with a passion 
+            I'm a 23-year-old full-stack web developer based in Tagbina, Surigao Del Sur, Philippines.
+            I recently graduated from <strong>North Eastern Mindanao State University</strong> with a passion
             for building clean, efficient, and user-centric web applications.
           </p>
           <p>
-            With expertise spanning from low-level programming in C/C++ to modern frameworks like 
-            Laravel, React, and Svelte, I bring a comprehensive understanding of the full development 
-            lifecycle. I thrive on solving complex problems and turning creative ideas into polished 
+            With expertise spanning from low-level programming in C/C++ to modern frameworks like
+            Laravel, React, and Svelte, I bring a comprehensive understanding of the full development
+            lifecycle. I thrive on solving complex problems and turning creative ideas into polished
             digital products.
           </p>
 
@@ -195,17 +205,14 @@
 
           <div class="about-highlights">
             <div class="highlight-card">
-              <div class="highlight-icon">🚀</div>
               <div class="highlight-number" data-count="20" data-suffix="+">0</div>
               <div class="highlight-text">Tech Stack</div>
             </div>
             <div class="highlight-card">
-              <div class="highlight-icon">💡</div>
               <div class="highlight-number" data-count="10" data-suffix="+">0</div>
               <div class="highlight-text">Projects</div>
             </div>
             <div class="highlight-card">
-              <div class="highlight-icon">☕</div>
               <div class="highlight-number" data-count="1000" data-suffix="+">0</div>
               <div class="highlight-text">Cups of Coffee</div>
             </div>
@@ -230,7 +237,7 @@
         <!-- Programming Languages -->
         <div class="skill-category reveal reveal-delay-1">
           <div class="skill-category-header">
-            <div class="skill-category-icon">⚡</div>
+            <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
             <div>
               <div class="skill-category-name">Languages</div>
               <div class="skill-category-count">Core programming languages</div>
@@ -249,7 +256,7 @@
         <!-- Web Frontend -->
         <div class="skill-category reveal reveal-delay-2">
           <div class="skill-category-header">
-            <div class="skill-category-icon">🎨</div>
+            <div class="skill-category-icon"><i class="fa-solid fa-palette"></i></div>
             <div>
               <div class="skill-category-name">Frontend</div>
               <div class="skill-category-count">UI & client-side technologies</div>
@@ -268,7 +275,7 @@
         <!-- Backend & Frameworks -->
         <div class="skill-category reveal reveal-delay-3">
           <div class="skill-category-header">
-            <div class="skill-category-icon">🔧</div>
+            <div class="skill-category-icon"><i class="fa-solid fa-server"></i></div>
             <div>
               <div class="skill-category-name">Backend & Frameworks</div>
               <div class="skill-category-count">Server-side & application frameworks</div>
@@ -280,13 +287,16 @@
             <span class="skill-tag"><span class="skill-dot framework"></span>Laravel</span>
             <span class="skill-tag"><span class="skill-dot framework"></span>Composer</span>
             <span class="skill-tag"><span class="skill-dot framework"></span>.NET</span>
+            <span class="skill-tag"><span class="skill-dot framework"></span>ASP.NET</span>
+            <span class="skill-tag"><span class="skill-dot framework"></span>Expo</span>
+            <span class="skill-tag"><span class="skill-dot framework"></span>Electron</span>
           </div>
         </div>
 
         <!-- Database & Tools -->
         <div class="skill-category reveal reveal-delay-4">
           <div class="skill-category-header">
-            <div class="skill-category-icon">🗄️</div>
+            <div class="skill-category-icon"><i class="fa-solid fa-database"></i></div>
             <div>
               <div class="skill-category-name">Database & Tools</div>
               <div class="skill-category-count">Data management & version control</div>
@@ -321,7 +331,7 @@
             <span class="timeline-year">2025 — 2026</span>
             <h3 class="timeline-degree">College Graduate</h3>
             <p class="timeline-school">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg>
+              <i class="fa-solid fa-graduation-cap"></i>
               North Eastern Mindanao State University
             </p>
           </div>
@@ -333,7 +343,7 @@
             <span class="timeline-year">2021 — 2022</span>
             <h3 class="timeline-degree">Senior High School Graduate</h3>
             <p class="timeline-school">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg>
+              <i class="fa-solid fa-graduation-cap"></i>
               Ismael Mathay Senior High School
             </p>
           </div>
@@ -345,7 +355,7 @@
             <span class="timeline-year">2019 — 2020</span>
             <h3 class="timeline-degree">High School Graduate</h3>
             <p class="timeline-school">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg>
+              <i class="fa-solid fa-graduation-cap"></i>
               Ismael Mathay High School
             </p>
           </div>
@@ -357,7 +367,7 @@
             <span class="timeline-year">2015 — 2016</span>
             <h3 class="timeline-degree">Elementary Graduate</h3>
             <p class="timeline-school">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 6 3 6 3s6-1 6-3v-5"/></svg>
+              <i class="fa-solid fa-graduation-cap"></i>
               Leopoldo B. Santos Elementary School
             </p>
           </div>
@@ -377,81 +387,8 @@
         </p>
       </div>
 
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-image-placeholder">🗂️</div>
-          <div class="project-body">
-            <h3 class="project-title">DTR Management System</h3>
-            <p class="project-description">
-              A complete Daily Time Record system with fingerprint integration, 
-              attendance compliance analytics, and automated reporting for organizational use.
-            </p>
-            <div class="project-tech-stack">
-              <span class="project-tech">Laravel</span>
-              <span class="project-tech">Livewire</span>
-              <span class="project-tech">MySQL</span>
-              <span class="project-tech">PHP</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link github" id="project-1-github">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                Source Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-image-placeholder">🌐</div>
-          <div class="project-body">
-            <h3 class="project-title">Personal Portfolio Website</h3>
-            <p class="project-description">
-              A modern, responsive portfolio built with vanilla HTML, CSS, and JavaScript featuring 
-              particle animations, glassmorphism design, and smooth interactions.
-            </p>
-            <div class="project-tech-stack">
-              <span class="project-tech">HTML</span>
-              <span class="project-tech">CSS</span>
-              <span class="project-tech">JavaScript</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link github" id="project-2-github">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                Source Code
-              </a>
-              <a href="#" class="project-link live" id="project-2-live">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 — Coming Soon -->
-        <div class="project-card reveal reveal-delay-3">
-          <div class="project-image-placeholder">🚀</div>
-          <div class="project-body">
-            <h3 class="project-title">More Projects Coming Soon</h3>
-            <p class="project-description">
-              I'm constantly building new things. Check back soon or visit my GitHub 
-              for the latest updates on my work and open-source contributions.
-            </p>
-            <div class="project-tech-stack">
-              <span class="project-tech">React</span>
-              <span class="project-tech">Svelte</span>
-              <span class="project-tech">Node.js</span>
-              <span class="project-tech">Python</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/" class="project-link github" id="project-3-github" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                Visit GitHub
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="projects-grid" id="projects-container">
+        <!-- Projects will be injected here by JavaScript -->
       </div>
     </div>
   </section>
@@ -469,27 +406,30 @@
 
       <div class="services-grid">
         <div class="service-card reveal reveal-delay-1">
-          <div class="service-icon">🖥️</div>
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
           <h3>Full-Stack Web Development</h3>
-          <p>Complete web applications built with modern frameworks like Laravel, React, and Svelte — from database to UI.</p>
+          <p>Complete web applications built with modern frameworks like Laravel, React, and Svelte — from database to
+            UI.</p>
         </div>
 
         <div class="service-card reveal reveal-delay-2">
-          <div class="service-icon">📱</div>
+          <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
           <h3>Responsive Web Design</h3>
-          <p>Pixel-perfect, mobile-first interfaces that look stunning on every device. Clean CSS, smooth animations, and modern aesthetics.</p>
+          <p>Pixel-perfect, mobile-first interfaces that look stunning on every device. Clean CSS, smooth animations,
+            and modern aesthetics.</p>
         </div>
 
         <div class="service-card reveal reveal-delay-3">
-          <div class="service-icon">⚙️</div>
+          <div class="service-icon"><i class="fa-solid fa-gear"></i></div>
           <h3>Backend & API Development</h3>
           <p>Robust REST APIs, database architecture, and server-side logic with Laravel, Node.js, and MySQL.</p>
         </div>
 
         <div class="service-card reveal reveal-delay-4">
-          <div class="service-icon">🔄</div>
+          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
           <h3>Maintenance & Optimization</h3>
-          <p>Performance tuning, bug fixing, code refactoring, and ongoing support to keep your applications running smoothly.</p>
+          <p>Performance tuning, bug fixing, code refactoring, and ongoing support to keep your applications running
+            smoothly.</p>
         </div>
       </div>
     </div>
@@ -510,28 +450,28 @@
         <div class="contact-info reveal reveal-delay-1">
           <h3>Let's build something great.</h3>
           <p>
-            I'm always open to discussing new projects, creative ideas, or opportunities 
-            to be part of your vision. Feel free to reach out through the form or any of 
+            I'm always open to discussing new projects, creative ideas, or opportunities
+            to be part of your vision. Feel free to reach out through the form or any of
             the channels below.
           </p>
 
           <div class="contact-methods">
             <div class="contact-method">
-              <div class="contact-method-icon">📧</div>
+              <div class="contact-method-icon"><i class="fa-solid fa-envelope"></i></div>
               <div class="contact-method-text">
                 <div class="label">Email</div>
                 <div class="value">arielnoja2002@gmail.com</div>
               </div>
             </div>
             <div class="contact-method">
-              <div class="contact-method-icon">📱</div>
+              <div class="contact-method-icon"><i class="fa-solid fa-phone"></i></div>
               <div class="contact-method-text">
                 <div class="label">Phone</div>
                 <div class="value">+63 954 276 3029</div>
               </div>
             </div>
             <div class="contact-method">
-              <div class="contact-method-icon">📍</div>
+              <div class="contact-method-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div class="contact-method-text">
                 <div class="label">Location</div>
                 <div class="value">P-3 San Jose Poblacion, Tagbina, Surigao Del Sur</div>
@@ -540,42 +480,19 @@
           </div>
 
           <div class="social-links">
-            <a href="https://github.com/" class="social-link" id="social-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <a href="https://github.com/arielnoja2002/" class="social-link" id="social-github" target="_blank"
+              rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com/" class="social-link" id="social-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a href="https://www.linkedin.com/in/ariel-noja-747026416/" class="social-link" id="social-linkedin"
+              target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="mailto:arielnoja2002@gmail.com" class="social-link" id="social-email" aria-label="Email">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
         </div>
-
-        <form class="contact-form reveal reveal-delay-2" id="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
-            </div>
-            <div class="form-group">
-              <label for="contact-email">Your Email</label>
-              <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="contact-subject">Subject</label>
-            <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry" />
-          </div>
-          <div class="form-group">
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" name="message" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit" id="contact-submit">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            Send Message
-          </button>
-        </form>
       </div>
     </div>
   </section>
@@ -585,7 +502,7 @@
     <div class="container">
       <div class="footer-content">
         <p class="footer-text">
-          © 2025 Ariel M. Noja. Crafted with <span class="heart">♥</span> from the Philippines.
+          © 2025 Ariel M. Noja. Crafted with <span class="heart"><i class="fa-solid fa-heart"></i></span> from the Philippines.
         </p>
         <div class="footer-links">
           <a href="#hero">Home</a>
@@ -600,4 +517,5 @@
   <!-- Scripts -->
   <script src="script.js"></script>
 </body>
+
 </html>

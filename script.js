@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypingEffect();
   initScrollReveal();
   initSmoothScroll();
-  initContactForm();
   initCountUp();
+  loadProjects();
 });
 
 /* ===== PARTICLE BACKGROUND ===== */
@@ -182,7 +182,7 @@ function initTypingEffect() {
 
 /* ===== SCROLL REVEAL ===== */
 function initScrollReveal() {
-  const reveals = document.querySelectorAll('.reveal');
+  const reveals = document.querySelectorAll('.reveal:not(.revealed)');
 
   const observer = new IntersectionObserver(
     entries => {
@@ -214,42 +214,6 @@ function initSmoothScroll() {
   });
 }
 
-/* ===== CONTACT FORM ===== */
-function initContactForm() {
-  const form = document.getElementById('contact-form');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    const btn = form.querySelector('.btn-submit');
-    const originalText = btn.innerHTML;
-
-    btn.innerHTML = `
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;">
-        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-      </svg>
-      Sending...`;
-    btn.disabled = true;
-
-    // Simulate sending (replace with actual service like Formspree)
-    setTimeout(() => {
-      btn.innerHTML = `
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        Message Sent!`;
-      btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-
-      setTimeout(() => {
-        btn.innerHTML = originalText;
-        btn.style.background = '';
-        btn.disabled = false;
-        form.reset();
-      }, 3000);
-    }, 1500);
-  });
-}
 
 /* ===== COUNT UP ANIMATION ===== */
 function initCountUp() {
@@ -288,3 +252,69 @@ function animateCount(el, start, end, duration, suffix) {
 
   requestAnimationFrame(step);
 }
+
+/* ===== DYNAMIC PROJECTS ===== */
+async function loadProjects() {
+  const container = document.getElementById('projects-container');
+  if (!container) return;
+
+  try {
+    const response = await fetch('./assets/projects/projects.json');
+    const projects = await response.json();
+
+    projects.forEach((project, index) => {
+      // Delay classes: 1, 2, 3, etc. Max out at 4 for styling simplicity if needed
+      const delayClass = `reveal-delay-${(index % 4) + 1}`;
+      
+      const techStackHTML = project.tools.map(tool => 
+        `<span class="project-tech">${tool}</span>`
+      ).join('');
+
+      let linksHTML = '';
+      if (project.downloadLink) {
+        linksHTML += `
+          <a href="${project.downloadLink}" class="project-link github" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-download"></i>
+            Download/Source
+          </a>
+        `;
+      }
+      
+      if (project.liveDemoLink) {
+        linksHTML += `
+          <a href="${project.liveDemoLink}" class="project-link live" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-up-right-from-square"></i>
+            Live Demo
+          </a>
+        `;
+      }
+
+      const projectHTML = `
+        <div class="project-card reveal ${delayClass}">
+          <div class="project-image-container">
+            <div class="project-image-fallback" style="display: none;">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <img src="${project.image}" alt="${project.title}" class="project-image" onerror="this.style.display='none'; this.previousElementSibling.style.display='flex';" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-description">${project.description}</p>
+            <div class="project-tech-stack">${techStackHTML}</div>
+            <div class="project-links">${linksHTML}</div>
+          </div>
+        </div>
+      `;
+      
+      container.innerHTML += projectHTML;
+    });
+
+    // Re-initialize scroll reveal for the new dynamic elements
+    initScrollReveal();
+
+  } catch (error) {
+    console.error('Failed to load projects:', error);
+    container.innerHTML = '<p style="color: var(--text-secondary); text-align: center; grid-column: 1 / -1;">Projects could not be loaded at this time.</p>';
+  }
+}
+
