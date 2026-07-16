@@ -948,6 +948,56 @@ ul {
   transition: var(--transition-base);
 }
 
+.award-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.award-logo {
+  flex-shrink: 0;
+  width: 140px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 8px;
+}
+
+.award-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.award-logo.hack4gov {
+  width: 200px;
+  height: 130px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.award-logo.hack4gov img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.award-content {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .award-card {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
 .timeline-item:hover .timeline-card {
   border-color: rgba(220, 38, 38, 0.3);
   transform: translateX(8px);
